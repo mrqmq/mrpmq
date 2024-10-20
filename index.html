@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="boxheart">
+            <div class="heart"><h1>Bấm vô đây nè baby</h1></div>
+            <div class="beat"></div>
+        </div>
+        <div class="boxchoose">
+            <h2>anhhh có đôi lời muốn nói em muốn nghe khum ?</i></h2>
+            <div class="listbutton">
+                <button id="no">Không</button>
+                <button id="yes">Em nghe nè</button>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="inner">
+                <h3>Chúc Mừng 20/10 chúc bé ngày càng xinh đẹp ! </h3>
+                <p>Anhhh.. có thể tìm hiểu em được khum ?</p>
+                <img src="love1.gif" alt="" />
+                <a href="TYMLYTUAN.html" target="_blank">Bí Mật Của Em Nè </a>
+            </div>
+        </div>
+        <script>
+            const noBtn = document.querySelector("#no");
+            const yesBtn = document.querySelector("#yes");
+            let boxheart = document.querySelector(".boxheart");
+            let boxchoose = document.querySelector(".boxchoose");
+            let popup = document.querySelector(".popup");
+            boxheart.addEventListener("click", function () {
+                boxheart.classList.add("active");
+                boxchoose.classList.add("active");
+            });
+            yesBtn.addEventListener("click", function () {
+                popup.classList.add("active");
+            });
+            noBtn.addEventListener("mouseenter", () => {
+                const top = Math.floor(Math.random() * window.innerHeight);
+                const left = Math.floor(Math.random() * window.innerWidth);
+
+                noBtn.style.top = `${top}px`;
+                noBtn.style.left = `${left}px`;
+            });
+        </script>
+    </body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+
+<HEAD>
+  <TITLE> Heart </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
